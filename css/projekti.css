@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1em;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* stilizoj nafbar*/
+.navbar-brand>img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    background-color: greenyellow;
+}
+.navbar, footer{
+    background-color:#845EC2 ;/* ndrzshojme background e kokes*/
+}
+.navbar a{
+    color: black;
+    font-size: 1.5em;
+}
+.fashionBeauty{
+    width: 100%;
+    height: 400%;
+}
+.carousel-inner, .carousel-inner img{
+    height: 500px;
+}
+.newPara{
+    display: none;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/projekti.css">
+
+</head>
+<body><nav class="navbar navbar-expand-lg"><!-- ngjyra e bacground-->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html"><img src="image/fashion.png.png" alt="fashion"></a><!-- ndyshim home htm, dhe emrin-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0"><!-- spostimi i ikonave ms-->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a><!-- ndyshim tek emri dhe tek href-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a><!-- ndyshim tek emri About dhe tek href duhet te vendoset about-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a><!-- do shtohet nje li dhe tek href duhet te vendoset about-->
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--Nis FORM CONTACT-->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+       <form onsubmit="contact(event)">
+        <div class="mb-3">
+            <label for="emri" class="form-lable">Emri</label>
+            <input type="text" class="form-control" id="emri">
+            <!---->
+
+        </div>
+        <div class="mb-3">
+            <label for="mbiemri" class="form-lable">Mbiemri</label>
+            <input type="text" class="form-control" id="mbiemri">
+
+        </div>
+
+        <div class="mb-3">
+            <label for="e-mail" class="form-lable">E-mail</label>
+            <input type="email" class="form-control" id="e-mail">
+
+        </div>
+        <div class="mb-3">
+            <label for="Coment" class="form-lable">Koment</label>
+            <textarea id="Coment" class="form-control"></textarea>
+
+        </div>
+        <input type="submit" class="btn btn-success" value="Dergo">
+
+       </form>
+       <p id="sms"></p>
+      </div>
+      <div class="col">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.323167713254!2d19.81206127587525!3d41.32358557130807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350313540c99c4b%3A0x7398d6f11582ba30!2sDominusoft%20Education!5e0!3m2!1sen!2s!4v1732274143473!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="container-fluid text-center text-white p-3">
+    <di>
+      <a href="https://www.instagram.com/" target="_blank" class="text-white fs-2 me-3"><i class="fa-brands fa-instagram"></i></a><!-- si vendosim ikonen e instagramit-->
+      <a href="https://www.facebook.com/" target="_blank" class="text-white fs-2 me-3"><i class="fa-brands fa-facebook"></i></a><!-- si vendosim ikonen e FBook-->
+    </di>
+    <di>
+      <p>Copyright: <span id="year"></span></p>
+    </di>
+
+  </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/contact.js"></script>
+  
+   <!--kontakte, rrjete sociale, adresa, nr.tel--> 
+</body>
+</html>
